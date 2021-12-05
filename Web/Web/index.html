@@ -1,0 +1,55 @@
+<html id="thank-you">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title v-i18n="title"></title>
+    <link rel="stylesheet" href="thank-you/thank-you.css">
+</head>
+
+<body>
+    <div id="all">
+        <section class="canvas-wrap">
+            <div id="canvas" class="gradient"></div>
+        </section>
+        <div id="content">
+            <div id="main">
+                <div class="img-head">
+                    <img src="thank-you/img/img-head2.png">
+                </div>
+                <div class="words" v-i18n="bigText" style="min-height:60px;">
+                </div>
+                <!-- <div class="thank-you">
+                	Thank you for used "Infinity New Tab"
+                </div> -->
+                <div class="button-out">
+                	<button class="button button-mormal" @click="feedback()" v-i18n="feedback"> </button>
+                	<button class="button button-ok" @click="toStore()"><img style="width:21px;" src="" :src="isEdge?'thank-you/img/edge.png':'thank-you/img/chrome.svg'" alt=""> <span v-i18n="tryPro"></span></button>
+                </div>
+                <div class="detail">
+                	<a v-show="isZh()" href="https://infinity-permanent.infinitynewtab.com/crx/infinity-pro.crx" @click="downloadCrx($event)" class="link link-1" v-i18n="downloadCrx"></a>
+                	<a :href="isEdge?'https://microsoftedge.microsoft.com/addons/detail/hajlmbnnniemimmaehcefkamdadpjlfa':'https://chrome.google.com/webstore/detail/infinity-new-tab-pro/nnnkddnnlpamobajfibfdgfnbcnkgngh'" target="_blank" class="link" v-i18n="learnnew"></a>
+                </div>
+                <div class="other" v-show="isZh()">
+                	<a href="https://ext.chrome.360.cn/webstore/detail/nnnkddnnlpamobajfibfdgfnbcnkgngh" target="_blank"><img src="thank-you/img/360.svg" alt=""></a>
+                	<a href="https://chrome.google.com/webstore/detail/infinity-new-tab-pro/nnnkddnnlpamobajfibfdgfnbcnkgngh" target="_blank"><img src="thank-you/img/liebao.svg" alt=""></a>
+                	<a href="https://chrome.google.com/webstore/detail/infinity-new-tab-pro/nnnkddnnlpamobajfibfdgfnbcnkgngh" target="_blank"><img src="thank-you/img/baidu.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="copyright">Copyright © 2014-2017 infinitynewtab.com</div>
+        </div>
+    </div>
+    <script defer="true" src="thank-you/js/jquery.1.7.1.min.js" type="text/javascript"></script>
+    <script defer="true" src="thank-you/js/vue.js"></script>
+    <script defer="true" src="thank-you/js/locales.js"></script>
+    <script defer="true" src="thank-you/js/vuelib.js"></script>
+    <script defer="true" src="thank-you/js/app.js"></script>
+    <script defer="true" src="thank-you/js/three.min.js"></script>
+    <script defer="true" src="thank-you/js/projector.js"></script>
+    <script defer="true" src="thank-you/js/canvas-renderer.js"></script>
+    <script defer="true" src="thank-you/js/3d-lines-animation.js"></script>
+    <script defer="true" src="thank-you/js/color.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+</body>
+
+</html>

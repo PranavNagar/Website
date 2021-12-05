@@ -1,0 +1,153 @@
+body{
+	position: absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden; 
+	margin:0;
+	font-family: Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', Roboto, 'Heiti SC', 'Microsoft Yahei', sans-serif;
+}
+#all{
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+#content{
+	position: absolute;
+	width:100%;
+	height:100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	top:0;
+	left:0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#main{
+	width: 100%;
+    max-width: 553px;
+	box-sizing: border-box;
+	padding-left: 26px;
+	overflow-x: visible;
+}
+.canvas-wrap{
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.img-head{
+	margin-top: 48px;
+	margin-left: -24px;
+}
+.img-head img{
+	width:100%;
+}
+.words{
+	margin-top: 12px;
+	width:800px;
+	font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;
+	color:#fff;
+	font-size: 34px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+.thank-you{
+	margin-top: 12px;
+	color:#eee;
+	font-size: 18px;
+	font-weight: 300;
+	display: none;
+}
+.button-out{
+	margin-top: 36px;
+	display: flex;
+	box-sizing: border-box;
+	padding-right: 28px;
+	justify-content: flex-start;
+}
+.button{
+	background-color: #ff4e50;
+	font-size: 18px;
+	border:none;
+	color:#fff;
+	padding:12px 36px;
+	border-radius: 4px;
+	border:1px solid #ccc;
+	outline:none;
+	cursor: pointer;
+	transition:all ease 0.2s;
+}
+.button:hover{
+	background-color:#ff3437;
+}
+.button:active{
+	background-color:#ff4e50;
+}
+.button-mormal{
+	display: block;
+	background-color: #5c5c5c;
+	margin-right: 36px;
+}
+.button-mormal:hover{
+	background-color:#4f4f4f;
+}
+.button-mormal:active{
+	background-color:#5c5c5c;
+}
+.button-ok{
+	display: flex;
+	align-items: center;
+}
+.button-ok img{
+	margin-right: 6px;
+}
+.copyright{
+	position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+    color:#eaeaea;
+    font-weight: 300;
+}
+.detail{
+	margin-top: 36px;
+}
+.link{
+	color:#ddd;
+	font-size: 13px;
+	transition:all ease 0.2s;
+}
+.link:hover{
+	color:#ccc;
+}
+.link:active{
+	color:#ddd;
+}
+.link-1{
+	margin-right: 36px;
+}
+.other{
+	margin-top: 24px;
+}
+.other img{
+	width:24px;
+	margin-right: 24px;
+	opacity: 0.6;
+	transition:all ease 0.2s;
+}
+.other img:hover{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+python -u -m http.server 8000 2> log.txt
